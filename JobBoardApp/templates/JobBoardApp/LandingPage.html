@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LandingPage.html</title>
+    <link rel="shortcuts icon" type="x-icon" href="/JobBoard/JobBoardApp/static/JobBoardApp/images/favicon.png" />
+    <link 
+    rel="stylesheet" 
+    type="text/css" 
+    href="{% static 'JobBoardApp/css/LandingPage.css' %}">
+    <link
+    href="{% static 'fontawesomefree/css/fontawesome.css' %}"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="{% static 'fontawesomefree/css/brands.css' %}"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link
+    href="{% static 'fontawesomefree/css/solid.css' %}"
+    rel="stylesheet"
+    type="text/css"
+  />
+  <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}">
+
+</head>
+<body>
+  <nav>
+    <div class = "logo">
+        <img src="{% static '/JobBoardApp/images/logo.png' %}" alt="Example Image">
+    </div>
+    <div class = "links">
+        <ul>
+            <li><a href="#featured_jobs"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#featured_jobs"><i class="fas fa-star"></i> Featured Jobs</a></li>
+            <li><a href="#testimonials"><i class="fas fa-comment"></i> Testimonials</a></li>
+            <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+            <li><a href="#about_us"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="#contact_us"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>        
+    </div>
+
+    <div class = "mobile-links">
+        <ul>
+            <li><a href="#featured_jobs"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#featured_jobs"><i class="fas fa-star"></i> Featured Jobs</a></li>
+            <li><a href="#testimonials"><i class="fas fa-comment"></i> Testimonials</a></li>
+            <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+            <li><a href="#about_us"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="#contact_us"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>        
+    </div>
+
+    <div class = "mobile">
+        <i class="fas fa-bars" id = "menu"></i> <!-- Hamburger icon -->
+        <i class="far fa-times" id = "times"></i> <!-- Star icon (outline style) -->        
+    </div>
+  </nav>
+  {% comment %} container div {% endcomment %}
+  <div class = "container">
+    <div class = "flex-container">
+        <div class = "text-container">
+            <h1>
+                Find Your Dream <span>Job</span>
+                <br></br>with Ease!
+            </h1>
+            <br></br>
+            <p>
+                Welcome to our job board website, where finding the perfect job is
+                 made simple. Whether you're seeking a new career opportunity or l
+                 ooking to hire talented individuals, we've got you covered. Our p
+                 latform offers a wide range of job listings and resources to help
+                  you succeed. Browse through our listings, get expert advice, and
+                   take the next step in your career journey. Join us today and di
+                   scover endless possibilities!
+            </p>
+            <a href="#contact_us">Create account <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class = "image-container">
+            <img src="{% static '/JobBoardApp/images/jobseeker.jpeg' %}" alt="Example Image">
+        </div>
+    </div>
+    {% comment %} popular category {% endcomment %}
+    <div class = "popular-category">
+     <p>Popular Category </p>
+    </div>
+ {% comment %} popular category container {% endcomment %}
+    <div class = "popular-category-container">
+      <p>Popular Category </p>
+     </div>
+  </div>
+  <script src="{% static 'JobBoardApp/js/LandingPage.js' %}"></script>
+</body>
+</html>
