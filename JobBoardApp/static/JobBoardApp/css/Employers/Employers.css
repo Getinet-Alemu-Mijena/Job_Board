@@ -1,0 +1,540 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+nav .logo img{
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
+    /* margin-right: 430px; */
+    align-self: flex-start;
+    align-content: flex-start;
+}
+
+nav .mobile{
+    color: purple;
+    cursor: pointer;
+    display: none;
+}
+
+nav .mobile #times, #menu{
+    display: none;
+}
+
+@media screen and (max-width: 676px) {
+
+    nav .mobile{
+        display: block;
+    }
+
+    nav .mobile #menu{
+        display: block;
+    }
+}
+
+nav .employer_profile_image{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #007bff;
+    cursor: pointer;
+}
+
+nav .employer_profile_image img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav .employer_profile{
+    width: 350px;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    right: -350px;
+    top: 55px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+nav .employer_profile::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+
+nav .employer_profile::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the background color of the track */
+}
+
+nav .employer_profile::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the color of the scrollbar thumb */
+    border-radius: 5px; /* Round the corners of the scrollbar thumb */
+}
+
+nav .employer_profile::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Change the color of the scrollbar thumb on hover */
+}
+
+nav .employer_profile ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+nav .employer_profile ul li{
+    list-style: none;
+    padding: 0px 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+nav .employer_profile ul li a{
+    color: #080808;
+    text-decoration: none;
+}
+
+nav .employer_profile ul   li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: orange;
+    display: block;
+    transition: 0.2s linear;
+}
+
+nav .employer_profile ul  li a:hover::after {
+    width: 100%;
+}
+
+nav .employer_profile ul  li a:hover {
+    color: rgb(206, 139, 16);
+}
+
+nav .employer_profile ul  li a i{
+ color: purple;
+}
+
+nav .search_container{
+    width: 50%;
+    height: 40px;
+    background-color: white;
+    align-self: center;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .search_container input{
+    width: calc(100% - 30px); /* Adjust for icon width and padding */
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+nav .search_container input::placeholder {
+    opacity: 0.8;
+}
+
+nav .search_container button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    color: blueviolet;
+}
+
+nav .search_container button:hover {
+    color: #0056b3; /* Darker shade of blue for hover effect */
+}
+
+
+.container{
+    width: 100%;
+    height: auto;
+    /* background-color: aqua; */
+    margin-top: 55px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto;
+    grid-template-areas: "left right";
+}
+
+.container .left{
+    grid-area: left;
+    background-color: white;
+    padding: 20px;
+    z-index: 10;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 676px) {
+    .container .left{
+        width: 250px;
+        height: 100vh;
+        position: absolute;
+        left: -250px;
+        top: 55px;
+        /* background-color: #0056b3; */
+    } 
+}
+
+.container .left::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+
+.container .left::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the background color of the track */
+}
+
+.container .left::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the color of the scrollbar thumb */
+    border-radius: 5px; /* Round the corners of the scrollbar thumb */
+}
+
+.container .left::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Change the color of the scrollbar thumb on hover */
+}
+
+.container .left ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    /* background-color: white; */
+}
+
+.container .left ul li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.container .left ul li a {
+    text-decoration: none;
+    color: #333; /* Change color as needed */
+    display: flex;
+    align-items: center;
+}
+
+.container .left ul li a i {
+    margin-right: 10px;
+    color: plum;
+}
+
+.container .left ul li a:hover {
+    color: #007bff; /* Change color for hover effect */
+}
+
+.container .right{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  z-index: 5;
+  /* background-color: aliceblue; */
+  background-color: white;
+}
+
+.container .right .jobs-list{
+    width: 90%;
+    height: auto;
+    /* background-color: #0056b3; */
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* cursor: pointer; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.container .right .jobs-list .flex-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+    width: 90%;
+    justify-content: space-between;
+    /* background-color: #0056b3; */
+}
+
+.container .right .jobs-list .flex-box label{
+    font-family:  sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(94, 45, 52);
+}
+
+.container .right .jobs-list .flex-box p{
+    font-family: 'Times New Roman';
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.container .right .jobs-list .flex-box a{
+    text-decoration: none;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: large;
+}
+
+.container .right .jobs-list .block-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    /* background-color: #0056b3; */
+    padding: 20px;
+    text-align: justify;
+    height: 200px;
+    overflow-y: hidden;
+}
+
+.container .right .jobs-list .block-box label{
+   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 678px) {
+    .container {
+        grid-template-columns: 100%;
+    }
+    .container .right {
+        width: 100%;
+    }
+}
+
+.container .create-jobs{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(65deg,lightgreen,rgb(122, 120, 120));
+    border-radius: 12px;
+    /* background-color: rgb(43, 18, 18); */
+    z-index: 50;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.container .create-jobs form {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    overflow-y: scroll;
+  }
+
+  .container .create-jobs form::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+
+.container .create-jobs form::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the background color of the track */
+}
+
+.container .create-jobs form::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the color of the scrollbar thumb */
+    border-radius: 5px; /* Round the corners of the scrollbar thumb */
+}
+
+.container .create-jobs form::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Change the color of the scrollbar thumb on hover */
+}
+  
+  .container .create-jobs label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .container .create-jobs input,
+  .container .create-jobs textarea,
+  .container .create-jobs select {
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container .create-jobs button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .container .create-jobs button:hover {
+    background-color: #0056b3;
+  }
+
+  .container .jobs_detail{
+    width: 90%;
+    height: 700px;
+    /* background-color: #0056b3; */
+    background: linear-gradient(63deg, white, plum);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 50;
+    border-radius: 12px;
+    margin-top: 155px;
+    display: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    overflow-y: scroll;
+  }
+
+.container .jobs_detail::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+
+.container .jobs_detail::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the background color of the track */
+}
+
+.container .jobs_detail::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the color of the scrollbar thumb */
+    border-radius: 5px; /* Round the corners of the scrollbar thumb */
+}
+
+.container .jobs_detail::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Change the color of the scrollbar thumb on hover */
+}
+
+  .container .jobs_detail .flex-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+    width: 90%;
+    justify-content: space-between;
+    /* background-color: #0056b3; */
+}
+
+.container .jobs_detail .flex-box1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+    width: 100%;
+    justify-content: flex-end;
+    /* background-color: #0056b3; */
+}
+
+.container .jobs_detail .flex-box1 .fas{
+    color: red;
+    cursor: pointer;
+    font-size: 23px;
+}
+
+.container .jobs_detail .flex-box label{
+    font-family:  sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(94, 45, 52);
+}
+
+.container .jobs_detail .flex-box p{
+    font-family: 'Times New Roman';
+    font-size: 17px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.container .jobs_detail .flex-box button{
+    width: 200px;
+    padding: 20px;
+    background-color: purple;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    border: none;
+    transition: all 1s;
+}
+
+.container .jobs_detail .flex-box button:hover{
+    background-color: wheat;
+    color: #080808;
+}
+
+.container .jobs_detail .block-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    /* background-color: #0056b3; */
+    padding: 20px;
+    text-align: justify;
+    height: auto;
+    /* margin: 20px; */
+}
+
+.container .jobs_detail .block-box label{
+   margin-bottom: 20px;
+}
+
+.container .jobs_detail .flex-box .companyLogo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* background-color: #0056b3; */
+}
+
+.container .jobs_detail .flex-box .companyLogo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
+  
+

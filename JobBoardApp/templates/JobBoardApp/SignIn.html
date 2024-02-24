@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SignIn.html</title>
+    <link
+      rel="shortcuts icon"
+      type="x-icon"
+      href="/JobBoard/JobBoardApp/static/JobBoardApp/images/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'JobBoardApp/css/SignIn.css' %}"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/fontawesome.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/brands.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/solid.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img
+          src="{% static '/JobBoardApp/images/logo.png' %}"
+          alt="Example Image"
+        />
+      </div>
+    </nav>
+    {% comment %} container div {% endcomment %}
+    <div class="container">
+      <div class="form-container">
+        <h3>Sign In</h3>
+        <form>
+          <div class="form-group">
+            <label for="user_name">User Name:</label>
+            <input
+              type="text"
+              id="user_name"
+              name="user_name"
+              class="form-control"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+            />
+          </div>
+
+          <div class="form-group1">
+            <a href="terms-and-conditions.html">Forgot password?</a>
+          </div>
+
+          <div class="form-group">
+            <button>Sign In</button>
+          </div>
+
+          <div class="form-group1">
+            <p>Don't have an account? <a href="{%url 'sign_up'%}">Sign Up</a></p>
+          </div>
+          <div class="form-group2">
+            <hr id="hr1"><p>Or</p><hr id="hr2">
+          </div>
+          <div class="form-group1">
+            <a href="" class="btn btn-facebook"><i class="fab fa-facebook"></i> Sign in with Facebook</a>
+        </div>    
+        <div class="form-group1">
+            <a href="" class="btn btn-github"><i class="fab fa-github"></i> Sign in with GitHub</a>
+        </div>  
+        <div class="form-group1">
+            <a href="" class="btn btn-google"><i class="fab fa-google"></i> Sign in with Google</a>
+        </div>      
+        </form>
+      </div>
+    </div>
+    <script src="{% static 'JobBoardApp/js/SignIn.js' %}"></script>
+  </body>
+</html>

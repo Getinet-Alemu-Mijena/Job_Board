@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ManageJobs.html</title>
+    <link
+      rel="shortcuts icon"
+      type="x-icon"
+      href="/JobBoard/JobBoardApp/static/JobBoardApp/images/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'JobBoardApp/css/Employers/ManageJobs.css' %}"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/fontawesome.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/brands.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/solid.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}" />
+  </head>
+  <body>
+    <nav>
+      <div class = "mobile">
+        <i class="fas fa-bars" id = "menu"></i> <!-- Hamburger icon -->
+        <i class="far fa-times" id = "times"></i> <!-- Star icon (outline style) -->        
+    </div>
+      <div class="logo">
+        <img
+          src="{% static '/JobBoardApp/images/logo.png' %}"
+          alt="Example Image"
+        />
+      </div>
+
+      <div class = "search_container">
+        <input
+        type="text"
+        id="user_name"
+        name="user_name"
+        class="form-control"
+      />
+      <button><i class="fas fa-search"></i></button>
+      </div>
+
+        <div class="employer_profile_image">
+          <img
+          src="{% static '/JobBoardApp/images/logo.png' %}"
+          alt="Example Image"
+        />
+        </div>
+
+        <div class = "employer_profile">
+          <ul>
+            <li><a href="#featured_jobs"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#featured_jobs"><i class="fas fa-star"></i> Featured Jobs</a></li>
+            <li><a href="#testimonials"><i class="fas fa-comment"></i> Testimonials</a></li>
+            <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
+            <li><a href="#about_us"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="#contact_us"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>   
+        </div>
+        
+    </nav>
+    {% comment %} container {% endcomment %}
+    <div class="container">
+      {% comment %} container {% endcomment %}
+      <div class="left">
+        <ul>
+          <li>
+            <a href="#job_applications"
+              ><i class="fas fa-file-alt"></i> Job Applications</a
+            >
+          </li>
+
+          <li>
+            <a href="#messages"><i class="fas fa-envelope"></i> Messages</a>
+          </li>
+      
+          <li>
+            <a href="#notifications"
+              ><i class="fas fa-bell"></i> Notifications</a
+            >
+          </li>
+          <li>
+            <a href="#job_listing_management"
+              ><i class="fas fa-briefcase"></i> Job Listing Management</a
+            >
+          </li>
+          <li>
+            <a href="#applicant_tracking"
+              ><i class="fas fa-users"></i> Applicant Tracking</a
+            >
+          </li>
+          <li>
+            <a href="#analytics"><i class="fas fa-chart-bar"></i> Analytics</a>
+          </li>
+       
+        </ul>
+      </div>
+      {% comment %} container {% endcomment %}
+      <div class="right"></div>
+    </div>
+    <script src="{% static 'JobBoardApp/js/Employers/ManageJobs.js' %}"></script>
+  </body>
+</html>

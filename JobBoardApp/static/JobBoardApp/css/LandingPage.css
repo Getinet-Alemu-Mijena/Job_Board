@@ -247,7 +247,290 @@ nav .mobile-links{
     height: auto;
     margin-left: 150px;
     padding: 30px;
-    background-color: aqua;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 45px;
 }
+
+@media screen and (max-width: 767px) {
+    .container .popular-category-container {
+        margin-left: 10px;
+        width: 100%;
+    }
+}
+
+.container .popular-category-container .job-department{
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, white,rgb(118, 115, 111));
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 10px;
+}
+
+.container .popular-category-container .job-department i{
+    color: purple;
+    margin-bottom: 10px;
+}
+
+.container .popular-category-container .job-department p{
+    color: purple;
+    margin-bottom: 10px;
+}
+
+.container .popular-category-container .job-department h3{
+    color: purple;
+    margin-bottom: 10px;
+}
+
+.container .experience-level {
+    width: 180px;
+    padding: 10px;
+    margin-left: 150px;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .container .experience-level {
+        margin-left: 10px;
+    }
+}
+
+.container .experience-level-container{
+    width: 80%;
+    height: auto;
+    margin-left: 150px;
+    padding: 30px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+@media screen and (max-width: 767px) {
+    .container .experience-level-container {
+        margin-left: 10px;
+        width: 100%;
+    }
+}
+
+.container .experience-level-container .job-department{
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, white,rgb(118, 115, 111));
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 10px;
+}
+
+.container .experience-level-container .job-department i{
+    color: purple;
+    margin-bottom: 10px;
+}
+
+.container .experience-level-container .job-department p{
+    color: purple;
+    margin-bottom: 10px;
+}
+
+.container .experience-level-container .job-department h3{
+    color: purple;
+    margin-bottom: 10px;
+}
+
+.floating-action-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* .container .message-container {
+    display: n;
+} */
+
+.container .message-container {
+    width: 25%;
+    height: 600px;
+    background-color: rgb(252, 249, 249);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    position: fixed;
+    right: -610px;
+    bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px;
+    overflow-y: scroll;
+}
+
+@media screen and (max-width: 767px) {
+    .container .message-container {
+        width: 70%;
+    }
+}
+
+.container .message-container::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+
+.container .message-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the background color of the track */
+}
+
+.container .message-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the color of the scrollbar thumb */
+    border-radius: 5px; /* Round the corners of the scrollbar thumb */
+}
+
+.container .message-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Change the color of the scrollbar thumb on hover */
+}
+
+
+.container .message-container .sender{
+    width: 70%;
+    height: auto;
+    background-color: wheat;
+    border-radius: 12px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    margin-left: 5px;
+    align-self: flex-end;
+    padding: 10px;
+}
+
+.container .message-container .sender .p{
+    text-align: justify;
+    line-height: 22px;
+}
+
+.container .message-container .reciever{
+    width: 70%;
+    height: auto;
+    margin-bottom: 15px;
+    margin-left: 100px;
+    padding: 10px;
+    background-color: wheat;
+    border-radius: 12px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    align-self: flex-start;
+}
+
+.container .message-container .reciever .p{
+    text-align: justify;
+    line-height: 22px;
+}
+
+.container .message-container .input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    /* background-color: wheat; */
+    width: 100%;
+}
+
+.container .message-container input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.container .message-container button {
+    padding: 8px 15px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-info {
+    text-align: center;
+}
+
 
 
