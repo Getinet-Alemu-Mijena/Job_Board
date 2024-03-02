@@ -126,35 +126,460 @@
       <div class="left">
         <ul>
             <li>
+              <a href="{% url 'Employers'%}"
+                ><i class="fas fa-file-alt"></i> View Jobs Uploaded</a
+              >
+            </li>
+
+            <li>
+              <a href="{% url 'CreateJob'%}" id="create_job"
+                ><i class="fas fa-plus"></i> Create Job</a
+              >
+            </li>
+  
+            <li>
               <a href="{% url 'ManageJobs'%}"
                 ><i class="fas fa-briefcase"></i> Manage Jobs</a
               >
             </li>
             <li>
-              <a href="#job_applications"
+              <a href="{% url 'JobApplications'%}"
                 ><i class="fas fa-file-alt"></i> Job Applications</a
               >
             </li>
   
             <li>
-              <a href="#messages"><i class="fas fa-envelope"></i> Messages</a>
+              <a href="{% url 'Messages'%}"><i class="fas fa-envelope"></i> Messages</a>
             </li>
         
             <li>
-              <a href="#notifications"
+              <a href="{% url 'Notifications'%}"
                 ><i class="fas fa-bell"></i> Notifications</a
               >
             </li>
             <li>
-              <a href="#job_listing_management"
-                ><i class="fas fa-briefcase"></i> Job Listing Management</a
-              >
+              <a href="{% url 'Analytics'%}"><i class="fas fa-chart-bar"></i> Analytics</a>
             </li>
+         
           </ul>
       </div>
       {% comment %} right {% endcomment %}
       <div class="right">
-        <i class="fas fa-users"></i> ApplicantTracking</a
+        <p>Web Developer</p>
+        <label>500 people applied for this job.</label>
+        <table>
+          <thead>
+              <tr>
+                <th>Candidate ID</th>
+                <th>Candidate Name</th>
+                <th>Job Id</th>
+                  <th>Job Title</th>
+                  <th colspan="2">Actions</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td>Gech</td>
+                <td>Gech</td>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td colspan="2">
+                      <button id="exam">Schedule for Written Exam</button>
+                      <button id="interview">Schedule for Interview</button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>Gech</td>
+                <td>Gech</td>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td colspan="2">
+                    <button id="exam">Schedule for Written Exam</button>
+                    <button id="interview">Schedule for Interview</button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>Gech</td>
+                <td>Gech</td>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td colspan="2">
+                    <button id="exam">Schedule for Written Exam</button>
+                    <button id="interview">Schedule for Interview</button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>Gech</td>
+                <td>Gech</td>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td colspan="2">
+                    <button id="exam">Schedule for Written Exam</button>
+                    <button id="interview">Schedule for Interview</button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>Gech</td>
+                <td>Gech</td>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td colspan="2">
+                    <button id="exam">Schedule for Written Exam</button>
+                    <button id="interview">Schedule for Interview</button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>Gech</td>
+                <td>Gech</td>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td colspan="2">
+                    <button id="exam">Schedule for Written Exam</button>
+                    <button id="interview">Schedule for Interview</button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>Gech</td>
+                <td>Gech</td>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td colspan="2">
+                    <button id="exam">Schedule for Written Exam</button>
+                    <button id="interview">Schedule for Interview</button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>Gech</td>
+                <td>Gech</td>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td colspan="2">
+                    <button id="exam">Schedule for Written Exam</button>
+                    <button id="interview">Schedule for Interview</button>
+                  </td>
+              </tr>
+          
+          </tbody>
+      </table> 
+      
+      <p>Web Developer</p>
+      <label>500 people applied for this job.</label>
+      <table>
+        <thead>
+            <tr>
+              <th>Candidate ID</th>
+              <th>Candidate Name</th>
+              <th>Job Id</th>
+                <th>Job Title</th>
+                <th colspan="2">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>Gech</td>
+              <td>Gech</td>
+              <td>Gech</td>
+                <td>Gech</td>
+                <td colspan="2">
+                    <button id="exam">Schedule for Written Exam</button>
+                    <button id="interview">Schedule for Interview</button>
+                </td>
+            </tr>
+
+            <tr>
+              <td>Gech</td>
+              <td>Gech</td>
+              <td>Gech</td>
+                <td>Gech</td>
+                <td colspan="2">
+                  <button id="exam">Schedule for Written Exam</button>
+                  <button id="interview">Schedule for Interview</button>
+                </td>
+            </tr>
+
+            <tr>
+              <td>Gech</td>
+              <td>Gech</td>
+              <td>Gech</td>
+                <td>Gech</td>
+                <td colspan="2">
+                  <button id="exam">Schedule for Written Exam</button>
+                  <button id="interview">Schedule for Interview</button>
+                </td>
+            </tr>
+
+            <tr>
+              <td>Gech</td>
+              <td>Gech</td>
+              <td>Gech</td>
+                <td>Gech</td>
+                <td colspan="2">
+                  <button id="exam">Schedule for Written Exam</button>
+                  <button id="interview">Schedule for Interview</button>
+                </td>
+            </tr>
+
+            <tr>
+              <td>Gech</td>
+              <td>Gech</td>
+              <td>Gech</td>
+                <td>Gech</td>
+                <td colspan="2">
+                  <button id="exam">Schedule for Written Exam</button>
+                  <button id="interview">Schedule for Interview</button>
+                </td>
+            </tr>
+
+            <tr>
+              <td>Gech</td>
+              <td>Gech</td>
+              <td>Gech</td>
+                <td>Gech</td>
+                <td colspan="2">
+                  <button id="exam">Schedule for Written Exam</button>
+                  <button id="interview">Schedule for Interview</button>
+                </td>
+            </tr>
+
+            <tr>
+              <td>Gech</td>
+              <td>Gech</td>
+              <td>Gech</td>
+                <td>Gech</td>
+                <td colspan="2">
+                  <button id="exam">Schedule for Written Exam</button>
+                  <button id="interview">Schedule for Interview</button>
+                </td>
+            </tr>
+
+            <tr>
+              <td>Gech</td>
+              <td>Gech</td>
+              <td>Gech</td>
+                <td>Gech</td>
+                <td colspan="2">
+                  <button id="exam">Schedule for Written Exam</button>
+                  <button id="interview">Schedule for Interview</button>
+                </td>
+            </tr>
+        
+        </tbody>
+    </table>  
+
+    <p>Web Developer</p>
+        <label>500 people applied for this job.</label>
+    <table>
+      <thead>
+          <tr>
+            <th>Candidate ID</th>
+            <th>Candidate Name</th>
+            <th>Job Id</th>
+              <th>Job Title</th>
+              <th colspan="2">Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td>Gech</td>
+            <td>Gech</td>
+            <td>Gech</td>
+              <td>Gech</td>
+              <td colspan="2">
+                  <button id="exam">Schedule for Written Exam</button>
+                  <button id="interview">Schedule for Interview</button>
+              </td>
+          </tr>
+
+          <tr>
+            <td>Gech</td>
+            <td>Gech</td>
+            <td>Gech</td>
+              <td>Gech</td>
+              <td colspan="2">
+                <button id="exam">Schedule for Written Exam</button>
+                <button id="interview">Schedule for Interview</button>
+              </td>
+          </tr>
+
+          <tr>
+            <td>Gech</td>
+            <td>Gech</td>
+            <td>Gech</td>
+              <td>Gech</td>
+              <td colspan="2">
+                <button id="exam">Schedule for Written Exam</button>
+                <button id="interview">Schedule for Interview</button>
+              </td>
+          </tr>
+
+          <tr>
+            <td>Gech</td>
+            <td>Gech</td>
+            <td>Gech</td>
+              <td>Gech</td>
+              <td colspan="2">
+                <button id="exam">Schedule for Written Exam</button>
+                <button id="interview">Schedule for Interview</button>
+              </td>
+          </tr>
+
+          <tr>
+            <td>Gech</td>
+            <td>Gech</td>
+            <td>Gech</td>
+              <td>Gech</td>
+              <td colspan="2">
+                <button id="exam">Schedule for Written Exam</button>
+                <button id="interview">Schedule for Interview</button>
+              </td>
+          </tr>
+
+          <tr>
+            <td>Gech</td>
+            <td>Gech</td>
+            <td>Gech</td>
+              <td>Gech</td>
+              <td colspan="2">
+                <button id="exam">Schedule for Written Exam</button>
+                <button id="interview">Schedule for Interview</button>
+              </td>
+          </tr>
+
+          <tr>
+            <td>Gech</td>
+            <td>Gech</td>
+            <td>Gech</td>
+              <td>Gech</td>
+              <td colspan="2">
+                <button id="exam">Schedule for Written Exam</button>
+                <button id="interview">Schedule for Interview</button>
+              </td>
+          </tr>
+
+          <tr>
+            <td>Gech</td>
+            <td>Gech</td>
+            <td>Gech</td>
+              <td>Gech</td>
+              <td colspan="2">
+                <button id="exam">Schedule for Written Exam</button>
+                <button id="interview">Schedule for Interview</button>
+              </td>
+          </tr>
+      
+      </tbody>
+  </table>  
+
+  <p>Web Developer</p>
+  <label>500 people applied for this job.</label>
+  <table>
+    <thead>
+        <tr>
+          <th>Candidate ID</th>
+          <th>Candidate Name</th>
+          <th>Job Id</th>
+            <th>Job Title</th>
+            <th colspan="2">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>Gech</td>
+          <td>Gech</td>
+          <td>Gech</td>
+            <td>Gech</td>
+            <td colspan="2">
+                <button id="exam">Schedule for Written Exam</button>
+                <button id="interview">Schedule for Interview</button>
+            </td>
+        </tr>
+
+        <tr>
+          <td>Gech</td>
+          <td>Gech</td>
+          <td>Gech</td>
+            <td>Gech</td>
+            <td colspan="2">
+              <button id="exam">Schedule for Written Exam</button>
+              <button id="interview">Schedule for Interview</button>
+            </td>
+        </tr>
+
+        <tr>
+          <td>Gech</td>
+          <td>Gech</td>
+          <td>Gech</td>
+            <td>Gech</td>
+            <td colspan="2">
+              <button id="exam">Schedule for Written Exam</button>
+              <button id="interview">Schedule for Interview</button>
+            </td>
+        </tr>
+
+        <tr>
+          <td>Gech</td>
+          <td>Gech</td>
+          <td>Gech</td>
+            <td>Gech</td>
+            <td colspan="2">
+              <button id="exam">Schedule for Written Exam</button>
+              <button id="interview">Schedule for Interview</button>
+            </td>
+        </tr>
+
+        <tr>
+          <td>Gech</td>
+          <td>Gech</td>
+          <td>Gech</td>
+            <td>Gech</td>
+            <td colspan="2">
+              <button id="exam">Schedule for Written Exam</button>
+              <button id="interview">Schedule for Interview</button>
+            </td>
+        </tr>
+
+        <tr>
+          <td>Gech</td>
+          <td>Gech</td>
+          <td>Gech</td>
+            <td>Gech</td>
+            <td colspan="2">
+              <button id="exam">Schedule for Written Exam</button>
+              <button id="interview">Schedule for Interview</button>
+            </td>
+        </tr>
+
+        <tr>
+          <td>Gech</td>
+          <td>Gech</td>
+          <td>Gech</td>
+            <td>Gech</td>
+            <td colspan="2">
+              <button id="exam">Schedule for Written Exam</button>
+              <button id="interview">Schedule for Interview</button>
+            </td>
+        </tr>
+
+        <tr>
+          <td>Gech</td>
+          <td>Gech</td>
+          <td>Gech</td>
+            <td>Gech</td>
+            <td colspan="2">
+              <button id="exam">Schedule for Written Exam</button>
+              <button id="interview">Schedule for Interview</button>
+            </td>
+        </tr>
+    
+    </tbody>
+</table>  
     </div>
     <script src="{% static 'JobBoardApp/js/Employers/ApplicantTracking.js' %}"></script>
   </body>

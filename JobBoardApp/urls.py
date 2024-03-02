@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path
-from .views import LandingPage, SignIn, SignUp, Employers, Candidates, Admin, ManageJobs, JobApplications, Messages,Notifications, JobListingManagement, ApplicantTracking, Analytics
+from .views import LandingPage, SignIn, SignUp, Employers, Candidates, Admin, ManageJobs, JobApplications, Messages,Notifications, ApplicantTracking, Analytics, ViewApplicationDetail,JobsDetail,CreateJob
 
 
 urlpatterns = [
@@ -13,9 +13,11 @@ urlpatterns = [
     path('JobApplications/', JobApplications, name='JobApplications'),
     path('Messages/', Messages, name='Messages'),
     path('Notifications/', Notifications, name='Notifications'),
-    path('JobListingManagement/', JobListingManagement, name='JobListingManagement'),
     path('ApplicantTracking/', ApplicantTracking, name='ApplicantTracking'),
     path('Analytics/', Analytics, name='Analytics'),
+    path('ViewApplicationDetail/', ViewApplicationDetail, name='ViewApplicationDetail'),
+    path('JobsDetail/', JobsDetail, name='JobsDetail'),
+    path('CreateJob/', CreateJob, name='CreateJob'),
     path('Candidates/', Candidates, name='Candidates'),
     path('Admin/', Admin, name='Admin'),
 ]

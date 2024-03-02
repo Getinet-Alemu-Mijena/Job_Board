@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notifications.html</title>
+    <link
+      rel="shortcuts icon"
+      type="x-icon"
+      href="/JobBoard/JobBoardApp/static/JobBoardApp/images/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'JobBoardApp/css/Employers/Notifications.css' %}"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/fontawesome.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/brands.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/solid.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}" />
+  </head>
+  <body>
+    <nav id="navigation">
+      <div class="mobile">
+        <i class="fas fa-bars" id="menu"></i>
+        <!-- Hamburger icon -->
+        <i class="far fa-times" id="times"></i>
+        <!-- Star icon (outline style) -->
+      </div>
+      <div class="logo">
+        <img
+          src="{% static '/JobBoardApp/images/logo.png' %}"
+          alt="Example Image"
+        />
+      </div>
+
+      <div class="search_container">
+        <input
+          type="text"
+          id="user_name"
+          name="user_name"
+          class="form-control"
+          placeholder="Search"
+        />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="employer_profile_image">
+        <img
+          src="{% static '/JobBoardApp/images/logo.png' %}"
+          alt="Example Image"
+        />
+      </div>
+
+      <div class="employer_profile">
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-google"></i> Google Account</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-exchange-alt"></i> Switch account</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-youtube"></i> YouTube Studio</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-shopping-cart"></i> Purchases and memberships</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-database"></i> Your data in YouTube</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-paint-brush"></i> Appearance: Device theme</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-language"></i> Language:</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-globe"></i> English</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-lock"></i> Restricted Mode: Off</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Location:</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-flag-usa"></i> United States</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-keyboard"></i> Keyboard shortcuts</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-cog"></i> Settings</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-comment"></i> Send feedback</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    {% comment %} container {% endcomment %}
+    <div class="container">
+      {% comment %} left {% endcomment %}
+      <div class="left">
+        <ul>
+            <li>
+              <a href="{% url 'Employers'%}"
+                ><i class="fas fa-file-alt"></i> View Jobs Uploaded</a
+              >
+            </li>
+
+            <li>
+              <a href="{% url 'CreateJob'%}" id="create_job"
+                ><i class="fas fa-plus"></i> Create Job</a
+              >
+            </li>
+  
+            <li>
+              <a href="{% url 'ManageJobs'%}"
+                ><i class="fas fa-briefcase"></i> Manage Jobs</a
+              >
+            </li>
+            <li>
+              <a href="{% url 'JobApplications'%}"
+                ><i class="fas fa-file-alt"></i> Job Applications</a
+              >
+            </li>
+  
+            <li>
+              <a href="{% url 'Messages'%}"><i class="fas fa-envelope"></i> Messages</a>
+            </li>
+  
+            <li>
+              <a href="{% url 'ApplicantTracking'%}"
+                ><i class="fas fa-users"></i> Applicant Tracking</a
+              >
+            </li>
+            <li>
+              <a href="{% url 'Analytics'%}"><i class="fas fa-chart-bar"></i> Analytics</a>
+            </li>
+         
+          </ul>
+      </div>
+      {% comment %} right {% endcomment %}
+      <div class="right">
+        <div class="new_application">
+          <a href="{% url 'JobApplications'%}">
+              <i class="fas fa-bell"></i> You have a new job application. Click here to view.
+          </a>
+      </div>      
+
+      <div class="application_updates">
+        <a href="{% url 'JobApplications' %}">
+            <i class="fas fa-bell"></i> One of your job applications has been updated. Click here to view.
+        </a>
+    </div>
+  
+     
+  <div class="job_posting_expiry">
+    <a href="{% url 'ManageJobs' %}">
+        <i class="fas fa-bell"></i> One of your job postings is about to expire. Click here to manage your job postings.
+    </a>
+</div>
+
+
+<div class="new_features_or_updates">
+  <a href="{% url 'Notifications' %}">
+      <i class="fas fa-bell"></i> New features or updates are available on the platform. Click here to explore.
+  </a>
+</div>
+
+
+        <div class="reminders">
+          <a href="{% url 'Messages' %}">
+              <i class="fas fa-bell"></i> Reminder: You have pending actions related to your job postings. Click here to manage them.
+          </a>
+      </div>
+      
+    </div>
+    
+    <script src="{% static 'JobBoardApp/js/Employers/Notifications.js' %}"></script>
+  </body>
+</html>

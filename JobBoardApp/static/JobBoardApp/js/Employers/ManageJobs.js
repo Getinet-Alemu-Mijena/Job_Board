@@ -11,14 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
         var currentRight = computedStyle.getPropertyValue('right');
 
         if (currentRight === '0px') {
-            employerProfile.style.right = "-250px";
+            employerProfile.style.right = "-350px";
         } else {
             employerProfile.style.right = "0";
         }
     });
 
     containerDiv.addEventListener('click',function(){
-        employerProfile.style.right = "-250px";
+        employerProfile.style.right = "-350px";
         leftContainer.style.left = '-250px';
         timesIcon.style.display = "none";
         menuIcon.style.display = "block";

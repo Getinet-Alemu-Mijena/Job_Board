@@ -1,0 +1,726 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ViewApplicationDetail.html</title>
+    <link
+      rel="shortcuts icon"
+      type="x-icon"
+      href="/JobBoard/JobBoardApp/static/JobBoardApp/images/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'JobBoardApp/css/Employers/ViewApplicationDetail.css' %}"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/fontawesome.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/brands.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/solid.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}" />
+  </head>
+  <body>
+    <nav id="navigation">
+      <div class="mobile">
+        <i class="fas fa-bars" id="menu"></i>
+        <!-- Hamburger icon -->
+        <i class="far fa-times" id="times"></i>
+        <!-- Star icon (outline style) -->
+      </div>
+      <div class="logo">
+        <img
+          src="{% static '/JobBoardApp/images/logo.png' %}"
+          alt="Example Image"
+        />
+      </div>
+
+      <div class="search_container">
+        <input
+          type="text"
+          id="user_name"
+          name="user_name"
+          class="form-control"
+          placeholder="Search"
+        />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="employer_profile_image">
+        <img
+          src="{% static '/JobBoardApp/images/logo.png' %}"
+          alt="Example Image"
+        />
+      </div>
+
+      <div class="employer_profile">
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-google"></i> Google Account</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-exchange-alt"></i> Switch account</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-youtube"></i> YouTube Studio</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-shopping-cart"></i> Purchases and memberships</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-database"></i> Your data in YouTube</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-paint-brush"></i> Appearance: Device theme</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-language"></i> Language:</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-globe"></i> English</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-lock"></i> Restricted Mode: Off</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Location:</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-flag-usa"></i> United States</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-keyboard"></i> Keyboard shortcuts</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-cog"></i> Settings</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-comment"></i> Send feedback</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    {% comment %} container {% endcomment %}
+    <div class="container">
+      {% comment %} left {% endcomment %}
+      <div class="left">
+        <ul>
+          <li>
+            <a href="{% url 'Employers'%}"
+              ><i class="fas fa-file-alt"></i> View Jobs Uploaded</a
+            >
+          </li>
+
+          <li>
+            <a href="{% url 'CreateJob'%}" id="create_job"
+              ><i class="fas fa-plus"></i> Create Job</a
+            >
+          </li>
+
+          <li>
+            <a href="{% url 'ManageJobs'%}"
+              ><i class="fas fa-briefcase"></i> Manage Jobs</a
+            >
+          </li>
+
+          <li>
+            <a href="{% url 'Messages'%}"
+              ><i class="fas fa-envelope"></i> Messages</a
+            >
+          </li>
+
+          <li>
+            <a href="{% url 'Notifications'%}"
+              ><i class="fas fa-bell"></i> Notifications</a
+            >
+          </li>
+          <li>
+            <a href="{% url 'ApplicantTracking'%}"
+              ><i class="fas fa-users"></i> Applicant Tracking</a
+            >
+          </li>
+          <li>
+            <a href="{% url 'Analytics'%}"
+              ><i class="fas fa-chart-bar"></i> Analytics</a
+            >
+          </li>
+        </ul>
+      </div>
+      {% comment %} right {% endcomment %}
+      <div class="right">
+        <div class="job">
+          <h3>Job Applied For</h3>
+          <div class="flex-box">
+            <label for="job_title">Job title:</label>
+            <p>Web developer</p>
+          </div>
+          <div class="flex-box">
+            <label for="applicationDeadline">Application Deadline:</label>
+            <p>2024-03-01</p>
+          </div>
+          <div class="flex-box">
+            <label for="date_posted">Date Posted:</label>
+            <p>2024-02-25</p>
+          </div>
+          <div class="flex-box">
+            <label for="companyName">Company Name:</label>
+            <p>ABC Company</p>
+          </div>
+          <div class="flex-box">
+            <label for="companyWebsite">Company Website:</label>
+            <p>www.abc.com</p>
+          </div>
+          <div class="flex-box">
+            <label for="companyEmail">Company Email:</label>
+            <p>info@abc.com</p>
+          </div>
+          <div class="flex-box">
+            <label for="responsibilities">Responsibilities:</label>
+            <p>
+              These are just some of the properties you might consider including
+              when creating a job listing. The specific properties you include
+              may vary depending on the nature of the job and the needs of your
+              application. These are just some of the properties you might
+              consider including when cre ating a job listing. The specific
+              properties you include may vary depending o n the nature of the
+              job and the needs of your application. These are just some of the
+              properties you might consider including when creating a job
+              listing. The specific properties you include may vary depending on
+              the nature of the job and the needs of your application. These are
+              just some of the properties you might consider including when cre
+              ating a job listing. The specific properties you include may vary
+              depending o n the nature of the job and the needs of your
+              application. These are just some of the properties you might
+              consider including when creating a job listing. The specific
+              properties you include may vary depending on the nature of the job
+              and the needs of your application. These are just some of the
+              properties you might consider including when cre ating a job
+              listing. The specific properties you include may vary depending o
+              n the nature of the job and the needs of your application.
+            </p>
+          </div>
+          <div class="flex-box">
+            <a href="{% url 'JobsDetail'%}">See jobs detail!</a>
+          </div>
+        </div>
+
+        {% comment %} application_detail {% endcomment %}
+
+        <div class="application_detail">
+          <h3>Applicant Detail</h3>
+          <div class="flex-box">
+            <label for="applicant_name">Applicant Name:</label>
+            <p>John Doe</p>
+          </div>
+          <div class="flex-box">
+            <label for="email">Email:</label>
+            <p>john.doe@example.com</p>
+          </div>
+          <div class="flex-box">
+            <label for="phone_number">Phone Number:</label>
+            <p>+1 234 567 890</p>
+          </div>
+          <div class="flex-box">
+            <label for="resume">Resume:</label>
+            <p><a href="/path/to/resume.pdf" target="_blank">View Resume</a></p>
+          </div>
+          <div class="flex-box">
+            <label for="cover_letter">Cover Letter:</label>
+            <p>
+              <a href="/path/to/cover_letter.pdf" target="_blank"
+                >View Cover Letter</a
+              >
+            </p>
+          </div>
+          <div class="flex-box">
+            <label for="application_status">Application Status:</label>
+            <p>Under Review</p>
+          </div>
+          <div class="flex-box">
+            <label for="notes">Notes:</label>
+            <p>Interview scheduled for next week.</p>
+          </div>
+          <div class="flex-box">
+            <label for="application_date">Application Date:</label>
+            <p>2024-02-28</p>
+          </div>
+          <div class="flex-box">
+            <label for="job_applied">Job Applied For:</label>
+            <p>Web Developer</p>
+          </div>
+          <div class="flex-box">
+            <label for="skills">Skills:</label>
+            <p>HTML, CSS, JavaScript, Python</p>
+          </div>
+          <div class="flex-box">
+            <label for="experience">Experience:</label>
+            <p>2 years</p>
+          </div>
+          <div class="flex-box">
+            <label for="education">Education:</label>
+            <p>Bachelor's Degree in Computer Science</p>
+          </div>
+          <div class="flex-box">
+            <label for="linkedin_profile">LinkedIn Profile:</label>
+            <p>
+              <a href="https://www.linkedin.com/in/johndoe" target="_blank"
+                >View LinkedIn Profile</a
+              >
+            </p>
+          </div>
+          <div class="flex-box">
+            <label for="linkedin_profile">Github Profile:</label>
+            <p>
+              <a href="https://www.github.com/in/johndoe" target="_blank"
+                >View Github Profile</a
+              >
+            </p>
+          </div>
+          <div class="flex-box">
+            <label for="Change Application Status">Change Application Status:</label>
+            <div class="change_application_status">
+              <table>
+                <thead>
+                    <tr>
+                      <th>ID</th>
+                        <th>Job Title</th>
+                        <th colspan="2">Change Application Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>Gech</td>
+                        <td>50</td>
+                        <td colspan="2">
+                            <button id="not_selected">Deselect</button>
+                            <button id="selected">Select</button>
+                            {% comment %} <button id="received">Received</button> {% endcomment %}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>  
+            </div>
+          </div> 
+        </div>
+
+          {% comment %} application_detail {% endcomment %}
+
+          <div class="application_detail">
+            <h3>Applicant Detail</h3>
+            <div class="flex-box">
+              <label for="applicant_name">Applicant Name:</label>
+              <p>John Doe</p>
+            </div>
+            <div class="flex-box">
+              <label for="email">Email:</label>
+              <p>john.doe@example.com</p>
+            </div>
+            <div class="flex-box">
+              <label for="phone_number">Phone Number:</label>
+              <p>+1 234 567 890</p>
+            </div>
+            <div class="flex-box">
+              <label for="resume">Resume:</label>
+              <p><a href="/path/to/resume.pdf" target="_blank">View Resume</a></p>
+            </div>
+            <div class="flex-box">
+              <label for="cover_letter">Cover Letter:</label>
+              <p>
+                <a href="/path/to/cover_letter.pdf" target="_blank"
+                  >View Cover Letter</a
+                >
+              </p>
+            </div>
+            <div class="flex-box">
+              <label for="application_status">Application Status:</label>
+              <p>Under Review</p>
+            </div>
+            <div class="flex-box">
+              <label for="notes">Notes:</label>
+              <p>Interview scheduled for next week.</p>
+            </div>
+            <div class="flex-box">
+              <label for="application_date">Application Date:</label>
+              <p>2024-02-28</p>
+            </div>
+            <div class="flex-box">
+              <label for="job_applied">Job Applied For:</label>
+              <p>Web Developer</p>
+            </div>
+            <div class="flex-box">
+              <label for="skills">Skills:</label>
+              <p>HTML, CSS, JavaScript, Python</p>
+            </div>
+            <div class="flex-box">
+              <label for="experience">Experience:</label>
+              <p>2 years</p>
+            </div>
+            <div class="flex-box">
+              <label for="education">Education:</label>
+              <p>Bachelor's Degree in Computer Science</p>
+            </div>
+            <div class="flex-box">
+              <label for="linkedin_profile">LinkedIn Profile:</label>
+              <p>
+                <a href="https://www.linkedin.com/in/johndoe" target="_blank"
+                  >View LinkedIn Profile</a
+                >
+              </p>
+            </div>
+            <div class="flex-box">
+              <label for="linkedin_profile">Github Profile:</label>
+              <p>
+                <a href="https://www.github.com/in/johndoe" target="_blank"
+                  >View Github Profile</a
+                >
+              </p>
+            </div>
+            <div class="flex-box">
+              <label for="Change Application Status">Change Application Status:</label>
+              <div class="change_application_status">
+                <table>
+                  <thead>
+                      <tr>
+                        <th>ID</th>
+                          <th>Job Title</th>
+                          <th colspan="2">Change Application Status</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td>Gech</td>
+                          <td>50</td>
+                          <td colspan="2">
+                            <button id="not_selected">Deselect</button>
+                            <button id="selected">Select</button>
+                              {% comment %} <button id="received">Received</button> {% endcomment %}
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>  
+              </div>
+            </div> 
+          </div>
+
+
+            {% comment %} application_detail {% endcomment %}
+
+        <div class="application_detail">
+          <h3>Applicant Detail</h3>
+          <div class="flex-box">
+            <label for="applicant_name">Applicant Name:</label>
+            <p>John Doe</p>
+          </div>
+          <div class="flex-box">
+            <label for="email">Email:</label>
+            <p>john.doe@example.com</p>
+          </div>
+          <div class="flex-box">
+            <label for="phone_number">Phone Number:</label>
+            <p>+1 234 567 890</p>
+          </div>
+          <div class="flex-box">
+            <label for="resume">Resume:</label>
+            <p><a href="/path/to/resume.pdf" target="_blank">View Resume</a></p>
+          </div>
+          <div class="flex-box">
+            <label for="cover_letter">Cover Letter:</label>
+            <p>
+              <a href="/path/to/cover_letter.pdf" target="_blank"
+                >View Cover Letter</a
+              >
+            </p>
+          </div>
+          <div class="flex-box">
+            <label for="application_status">Application Status:</label>
+            <p>Under Review</p>
+          </div>
+          <div class="flex-box">
+            <label for="notes">Notes:</label>
+            <p>Interview scheduled for next week.</p>
+          </div>
+          <div class="flex-box">
+            <label for="application_date">Application Date:</label>
+            <p>2024-02-28</p>
+          </div>
+          <div class="flex-box">
+            <label for="job_applied">Job Applied For:</label>
+            <p>Web Developer</p>
+          </div>
+          <div class="flex-box">
+            <label for="skills">Skills:</label>
+            <p>HTML, CSS, JavaScript, Python</p>
+          </div>
+          <div class="flex-box">
+            <label for="experience">Experience:</label>
+            <p>2 years</p>
+          </div>
+          <div class="flex-box">
+            <label for="education">Education:</label>
+            <p>Bachelor's Degree in Computer Science</p>
+          </div>
+          <div class="flex-box">
+            <label for="linkedin_profile">LinkedIn Profile:</label>
+            <p>
+              <a href="https://www.linkedin.com/in/johndoe" target="_blank"
+                >View LinkedIn Profile</a
+              >
+            </p>
+          </div>
+          <div class="flex-box">
+            <label for="linkedin_profile">Github Profile:</label>
+            <p>
+              <a href="https://www.github.com/in/johndoe" target="_blank"
+                >View Github Profile</a
+              >
+            </p>
+          </div>
+          <div class="flex-box">
+            <label for="Change Application Status">Change Application Status:</label>
+            <div class="change_application_status">
+              <table>
+                <thead>
+                    <tr>
+                      <th>ID</th>
+                        <th>Job Title</th>
+                        <th colspan="2">Change Application Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>Gech</td>
+                        <td>50</td>
+                        <td colspan="2">
+                          <button id="not_selected">Deselect</button>
+                          <button id="selected">Select</button>
+                            {% comment %} <button id="received">Received</button> {% endcomment %}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>  
+            </div>
+          </div> 
+        </div>
+
+          {% comment %} application_detail {% endcomment %}
+
+          <div class="application_detail">
+            <h3>Applicant Detail</h3>
+            <div class="flex-box">
+              <label for="applicant_name">Applicant Name:</label>
+              <p>John Doe</p>
+            </div>
+            <div class="flex-box">
+              <label for="email">Email:</label>
+              <p>john.doe@example.com</p>
+            </div>
+            <div class="flex-box">
+              <label for="phone_number">Phone Number:</label>
+              <p>+1 234 567 890</p>
+            </div>
+            <div class="flex-box">
+              <label for="resume">Resume:</label>
+              <p><a href="/path/to/resume.pdf" target="_blank">View Resume</a></p>
+            </div>
+            <div class="flex-box">
+              <label for="cover_letter">Cover Letter:</label>
+              <p>
+                <a href="/path/to/cover_letter.pdf" target="_blank"
+                  >View Cover Letter</a
+                >
+              </p>
+            </div>
+            <div class="flex-box">
+              <label for="application_status">Application Status:</label>
+              <p>Under Review</p>
+            </div>
+            <div class="flex-box">
+              <label for="notes">Notes:</label>
+              <p>Interview scheduled for next week.</p>
+            </div>
+            <div class="flex-box">
+              <label for="application_date">Application Date:</label>
+              <p>2024-02-28</p>
+            </div>
+            <div class="flex-box">
+              <label for="job_applied">Job Applied For:</label>
+              <p>Web Developer</p>
+            </div>
+            <div class="flex-box">
+              <label for="skills">Skills:</label>
+              <p>HTML, CSS, JavaScript, Python</p>
+            </div>
+            <div class="flex-box">
+              <label for="experience">Experience:</label>
+              <p>2 years</p>
+            </div>
+            <div class="flex-box">
+              <label for="education">Education:</label>
+              <p>Bachelor's Degree in Computer Science</p>
+            </div>
+            <div class="flex-box">
+              <label for="linkedin_profile">LinkedIn Profile:</label>
+              <p>
+                <a href="https://www.linkedin.com/in/johndoe" target="_blank"
+                  >View LinkedIn Profile</a
+                >
+              </p>
+            </div>
+            <div class="flex-box">
+              <label for="linkedin_profile">Github Profile:</label>
+              <p>
+                <a href="https://www.github.com/in/johndoe" target="_blank"
+                  >View Github Profile</a
+                >
+              </p>
+            </div>
+            <div class="flex-box">
+              <label for="Change Application Status">Change Application Status:</label>
+              <div class="change_application_status">
+                <table>
+                  <thead>
+                      <tr>
+                        <th>ID</th>
+                          <th>Job Title</th>
+                          <th colspan="2">Change Application Status</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td>Gech</td>
+                          <td>50</td>
+                          <td colspan="2">
+                            <button id="not_selected">Deselect</button>
+                            <button id="selected">Select</button>
+                              {% comment %} <button id="received">Received</button> {% endcomment %}
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>  
+              </div>
+            </div> 
+          </div>
+
+            {% comment %} application_detail {% endcomment %}
+
+        <div class="application_detail">
+          <h3>Applicant Detail</h3>
+          <div class="flex-box">
+            <label for="applicant_name">Applicant Name:</label>
+            <p>John Doe</p>
+          </div>
+          <div class="flex-box">
+            <label for="email">Email:</label>
+            <p>john.doe@example.com</p>
+          </div>
+          <div class="flex-box">
+            <label for="phone_number">Phone Number:</label>
+            <p>+1 234 567 890</p>
+          </div>
+          <div class="flex-box">
+            <label for="resume">Resume:</label>
+            <p><a href="/path/to/resume.pdf" target="_blank">View Resume</a></p>
+          </div>
+          <div class="flex-box">
+            <label for="cover_letter">Cover Letter:</label>
+            <p>
+              <a href="/path/to/cover_letter.pdf" target="_blank"
+                >View Cover Letter</a
+              >
+            </p>
+          </div>
+          <div class="flex-box">
+            <label for="application_status">Application Status:</label>
+            <p>Under Review</p>
+          </div>
+          <div class="flex-box">
+            <label for="notes">Notes:</label>
+            <p>Interview scheduled for next week.</p>
+          </div>
+          <div class="flex-box">
+            <label for="application_date">Application Date:</label>
+            <p>2024-02-28</p>
+          </div>
+          <div class="flex-box">
+            <label for="job_applied">Job Applied For:</label>
+            <p>Web Developer</p>
+          </div>
+          <div class="flex-box">
+            <label for="skills">Skills:</label>
+            <p>HTML, CSS, JavaScript, Python</p>
+          </div>
+          <div class="flex-box">
+            <label for="experience">Experience:</label>
+            <p>2 years</p>
+          </div>
+          <div class="flex-box">
+            <label for="education">Education:</label>
+            <p>Bachelor's Degree in Computer Science</p>
+          </div>
+          <div class="flex-box">
+            <label for="linkedin_profile">LinkedIn Profile:</label>
+            <p>
+              <a href="https://www.linkedin.com/in/johndoe" target="_blank"
+                >View LinkedIn Profile</a
+              >
+            </p>
+          </div>
+          <div class="flex-box">
+            <label for="linkedin_profile">Github Profile:</label>
+            <p>
+              <a href="https://www.github.com/in/johndoe" target="_blank"
+                >View Github Profile</a
+              >
+            </p>
+          </div>
+           <div class="flex-box">
+            <label for="Change Application Status">Change Application Status:</label>
+            <div class="change_application_status">
+              <table>
+                <thead>
+                    <tr>
+                      <th>ID</th>
+                        <th>Job Title</th>
+                        <th colspan="2">Change Application Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <td>Gech</td>
+                        <td>50</td>
+                        <td colspan="2">
+                          <button id="not_selected">Deselect</button>
+                          <button id="selected">Select</button>
+                            {% comment %} <button id="received">Received</button> {% endcomment %}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>  
+            </div>
+          </div> 
+        </div>
+      </div>
+    </div>
+    <script src="{% static 'JobBoardApp/js/Employers/ViewApplicationDetail.js' %}"></script>
+  </body>
+</html>

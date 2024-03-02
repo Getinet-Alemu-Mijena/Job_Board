@@ -78,38 +78,230 @@
       <div class="left">
         <ul>
           <li>
-            <a href="#job_applications"
+            <a href="{% url 'Employers'%}"
+              ><i class="fas fa-file-alt"></i> View Jobs Uploaded</a
+            >
+          </li>
+
+          <li>
+            <a href="{% url 'CreateJob'%}" id="create_job"
+              ><i class="fas fa-plus"></i> Create Job</a
+            >
+          </li>
+
+          <li>
+            <a href="{% url 'JobApplications'%}"
               ><i class="fas fa-file-alt"></i> Job Applications</a
             >
           </li>
 
           <li>
-            <a href="#messages"><i class="fas fa-envelope"></i> Messages</a>
+            <a href="{% url 'Messages'%}"><i class="fas fa-envelope"></i> Messages</a>
           </li>
       
           <li>
-            <a href="#notifications"
+            <a href="{% url 'Notifications'%}"
               ><i class="fas fa-bell"></i> Notifications</a
             >
           </li>
           <li>
-            <a href="#job_listing_management"
-              ><i class="fas fa-briefcase"></i> Job Listing Management</a
-            >
-          </li>
-          <li>
-            <a href="#applicant_tracking"
+            <a href="{% url 'ApplicantTracking'%}"
               ><i class="fas fa-users"></i> Applicant Tracking</a
             >
           </li>
           <li>
-            <a href="#analytics"><i class="fas fa-chart-bar"></i> Analytics</a>
+            <a href="{% url 'Analytics'%}"><i class="fas fa-chart-bar"></i> Analytics</a>
           </li>
        
         </ul>
       </div>
       {% comment %} container {% endcomment %}
-      <div class="right"></div>
+      <div class="right">
+        <table>
+          <thead>
+              <tr>
+                <th>ID</th>
+                  <th>Job Title</th>
+                  <th>Date Posted</th>
+                  <th>Application Deadline</th>
+                  <th colspan="3">Status</th>
+                  <th colspan="3">Actions</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td class = "flex_td" colspan="3">
+                      <button id="active">Active</button>
+                      <button id="pending">Pending</button>
+                      <button id="expired">Expired</button>
+                  </td>
+                  <td colspan="3">
+                      <button id="delete">Delete</button>
+                      <button id="edit">Edit</button>
+                      <button id="extend_deadline">Extend Deadline</button>
+                  </td>
+              </tr>
+              
+
+              <tr>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td class = "flex_td" colspan="3">
+                      <button id="active">Active</button>
+                      <button id="pending">Pending</button>
+                      <button id="expired">Expired</button>
+                  </td>
+                  <td colspan="3">
+                      <button id="delete">Delete</button>
+                      <button id="edit">Edit</button>
+                      <button id="extend_deadline">Extend Deadline</button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td class = "flex_td" colspan="3">
+                      <button id="active">Active</button>
+                      <button id="pending">Pending</button>
+                      <button id="expired">Expired</button>
+                  </td>
+                  <td colspan="3">
+                      <button id="delete">Delete</button>
+                      <button id="edit">Edit</button>
+                      <button id="extend_deadline">Extend Deadline</button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td class = "flex_td" colspan="3">
+                      <button id="active">Active</button>
+                      <button id="pending">Pending</button>
+                      <button id="expired">Expired</button>
+                  </td>
+                  <td colspan="3">
+                      <button id="delete">Delete</button>
+                      <button id="edit">Edit</button>
+                      <button id="extend_deadline">Extend Deadline</button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td class = "flex_td" colspan="3">
+                      <button id="active">Active</button>
+                      <button id="pending">Pending</button>
+                      <button id="expired">Expired</button>
+                  </td>
+                  <td colspan="3">
+                      <button id="delete">Delete</button>
+                      <button id="edit">Edit</button>
+                      <button id="extend_deadline">Extend Deadline</button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td class = "flex_td" colspan="3">
+                      <button id="active">Active</button>
+                      <button id="pending">Pending</button>
+                      <button id="expired">Expired</button>
+                  </td>
+                  <td colspan="3">
+                      <button id="delete">Delete</button>
+                      <button id="edit">Edit</button>
+                      <button id="extend_deadline">Extend Deadline</button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td class = "flex_td" colspan="3">
+                      <button id="active">Active</button>
+                      <button id="pending">Pending</button>
+                      <button id="expired">Expired</button>
+                  </td>
+                  <td colspan="3">
+                      <button id="delete">Delete</button>
+                      <button id="edit">Edit</button>
+                      <button id="extend_deadline">Extend Deadline</button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td class = "flex_td" colspan="3">
+                      <button id="active">Active</button>
+                      <button id="pending">Pending</button>
+                      <button id="expired">Expired</button>
+                  </td>
+                  <td colspan="3">
+                      <button id="delete">Delete</button>
+                      <button id="edit">Edit</button>
+                      <button id="extend_deadline">Extend Deadline</button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td class = "flex_td" colspan="3">
+                      <button id="active">Active</button>
+                      <button id="pending">Pending</button>
+                      <button id="expired">Expired</button>
+                  </td>
+                  <td colspan="3">
+                      <button id="delete">Delete</button>
+                      <button id="edit">Edit</button>
+                      <button id="extend_deadline">Extend Deadline</button>
+                  </td>
+              </tr>
+
+              <tr>
+                <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td>Gech</td>
+                  <td class = "flex_td" colspan="3">
+                      <button id="active">Active</button>
+                      <button id="pending">Pending</button>
+                      <button id="expired">Expired</button>
+                  </td>
+                  <td colspan="3">
+                      <button id="delete">Delete</button>
+                      <button id="edit">Edit</button>
+                      <button id="extend_deadline">Extend Deadline</button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>    
+    </div>
     </div>
     <script src="{% static 'JobBoardApp/js/Employers/ManageJobs.js' %}"></script>
   </body>

@@ -1,0 +1,255 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Messages.html</title>
+    <link
+      rel="shortcuts icon"
+      type="x-icon"
+      href="/JobBoard/JobBoardApp/static/JobBoardApp/images/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'JobBoardApp/css/Employers/Messages.css' %}"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/fontawesome.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/brands.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{% static 'fontawesomefree/css/solid.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}" />
+  </head>
+  <body>
+    <nav id="navigation">
+      <div class="mobile">
+        <i class="fas fa-bars" id="menu"></i>
+        <!-- Hamburger icon -->
+        <i class="far fa-times" id="times"></i>
+        <!-- Star icon (outline style) -->
+      </div>
+      <div class="logo">
+        <img
+          src="{% static '/JobBoardApp/images/logo.png' %}"
+          alt="Example Image"
+        />
+      </div>
+
+      <div class="search_container">
+        <input
+          type="text"
+          id="user_name"
+          name="user_name"
+          class="form-control"
+          placeholder="Search"
+        />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="employer_profile_image">
+        <img
+          src="{% static '/JobBoardApp/images/logo.png' %}"
+          alt="Example Image"
+        />
+      </div>
+
+      <div class="employer_profile">
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-google"></i> Google Account</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-exchange-alt"></i> Switch account</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-youtube"></i> YouTube Studio</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-shopping-cart"></i> Purchases and memberships</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-database"></i> Your data in YouTube</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-paint-brush"></i> Appearance: Device theme</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-language"></i> Language:</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-globe"></i> English</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-lock"></i> Restricted Mode: Off</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-map-marker-alt"></i> Location:</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-flag-usa"></i> United States</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-keyboard"></i> Keyboard shortcuts</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-cog"></i> Settings</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-question-circle"></i> Help</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-comment"></i> Send feedback</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    {% comment %} container {% endcomment %}
+    <div class="container">
+      {% comment %} left {% endcomment %}
+      <div class="left">
+        <ul>
+            <li>
+              <a href="{% url 'Employers'%}"
+                ><i class="fas fa-file-alt"></i> View Jobs Uploaded</a
+              >
+            </li>
+
+            <li>
+              <a href="{% url 'CreateJob'%}" id="create_job"
+                ><i class="fas fa-plus"></i> Create Job</a
+              >
+            </li>
+  
+            <li>
+              <a href="{% url 'ManageJobs'%}"
+                ><i class="fas fa-briefcase"></i> Manage Jobs</a
+              >
+            </li>
+            <li>
+              <a href="{% url 'JobApplications'%}"
+                ><i class="fas fa-file-alt"></i> Job Applications</a
+              >
+            </li>
+        
+            <li>
+              <a href="{% url 'Notifications'%}"
+                ><i class="fas fa-bell"></i> Notifications</a
+              >
+            </li>
+            <li>
+              <a href="{% url 'ApplicantTracking'%}"
+                ><i class="fas fa-users"></i> Applicant Tracking</a
+              >
+            </li>
+            <li>
+              <a href="{% url 'Analytics'%}"><i class="fas fa-chart-bar"></i> Analytics</a>
+            </li>
+         
+          </ul>
+      </div>
+      {% comment %} right {% endcomment %}
+      <div class="right">
+        <div class="user_profile">
+          <div class="admin">
+            <label for="Change Application Status">Admin</label>
+          </div>
+          <div class="candidate">
+            <label for="Change Application Status">Candidate</label>
+          </div>
+        </div>
+        <div class="user_profile">
+          <div class="user_profile_image">
+            <img
+          src="{% static '/JobBoardApp/images/logo.png' %}"
+          alt="Example Image"
+        />
+          </div>
+          <div class="user_profile_username">
+            <label for="Change Application Status">User Name</label>
+          </div>
+        </div>
+
+        <div class="message-container">
+          <div class="left_container">
+            <label for="Change Application Status">
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+            </label>
+          </div>
+          <div class="right_container">
+            <label for="Change Application Status">
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+            </label>
+          </div>
+
+          <div class="left_container">
+            <label for="Change Application Status">
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+            </label>
+          </div>
+          <div class="right_container">
+            <label for="Change Application Status">
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+            </label>
+          </div>
+
+          <div class="left_container">
+            <label for="Change Application Status">
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+            </label>
+          </div>
+          <div class="right_container">
+            <label for="Change Application Status">
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+              User NameUser NameUser NameUser NameUser NameUser NameUser Name
+            </label>
+          </div>
+
+          <div class="input-container">
+            <input type="text" placeholder="Type your message here...">
+            <button>Send</button>
+         </div>
+        </div>
+    </div>
+    <script src="{% static 'JobBoardApp/js/Employers/Messages.js' %}"></script>
+  </body>
+</html>

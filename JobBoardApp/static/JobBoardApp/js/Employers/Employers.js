@@ -5,11 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     menuIcon = document.getElementById('menu');
     timesIcon = document.getElementById('times');
     leftContainer = document.querySelector('.left');
-    createJobLink = document.getElementById('create_job');
-    createJobDiv = document.querySelector('.create-jobs');
     navigationBar = document.getElementById('navigation');
-    timesCancel = document.getElementById('times_cancel');
-    jobsDetailDiv = document.querySelector('.jobs_detail');
     seeMoreLink = document.getElementById('see_more_link');
 
 
@@ -43,20 +39,8 @@ document.addEventListener('DOMContentLoaded', function () {
         leftContainer.style.left = '-250px';
     });
 
-    createJobLink.addEventListener('click',function(){
-        createJobDiv.style.display = "block";
-    });
-
     navigationBar.addEventListener('click',function(){
         createJobDiv.style.display = "none";
-    });
-
-    timesCancel.addEventListener('click',function(){
-        jobsDetailDiv.style.display = "none";
-    });
-
-    seeMoreLink.addEventListener('click',function(){
-        jobsDetailDiv.style.display = "flex";
     });
 
 });
